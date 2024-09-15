@@ -122,7 +122,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       color: AppColors.primary,
                     ),
                   ),
-                  child: const Text('Login Now'),
+                  child: const Text('Login Now fast'),
                 ),
               ],
             ),
