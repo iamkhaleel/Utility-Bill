@@ -52,7 +52,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ),
                 buildPage(
                   image: '../assets/onboarding2.png', // Using onboarding2.png
-                  title: 'Make payments from anywhere',
+                  title: 'Make payments from anywhere easily',
                   description:
                       'Make payments securely and safely from anywhere in the world.',
                 ),
