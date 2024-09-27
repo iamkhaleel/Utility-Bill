@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart'; // Import for input formatting
-import 'package:flutter_application_2/theme.dart'; // Import your theme and styles
+import 'package:flutter/services.dart';
+import 'package:flutter_application_2/theme.dart';
 
 class EmailVerificationScreen extends StatelessWidget {
   const EmailVerificationScreen({super.key});
@@ -19,8 +19,8 @@ class EmailVerificationScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+            const Padding(
+              padding: EdgeInsets.only(top: 20.0, bottom: 40.0),
               child: Text(
                 'Email Verification',
                 style: AppTextStyles.heading2,
@@ -77,7 +77,7 @@ class EmailVerificationScreen extends StatelessWidget {
                 ),
                 backgroundColor: AppColors.primary,
               ),
-              child: Text('Verify', style: AppTextStyles.body1),
+              child: const Text('Verify', style: AppTextStyles.body1),
             ),
           ],
         ),

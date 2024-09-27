@@ -20,8 +20,8 @@ class SignUpScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // Title Text
-            Padding(
-              padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+            const Padding(
+              padding: EdgeInsets.only(top: 20.0, bottom: 40.0),
               child: Text(
                 'Continue to Signup',
                 style: AppTextStyles.heading2,
@@ -95,7 +95,7 @@ class SignUpScreen extends StatelessWidget {
                 ),
                 backgroundColor: AppColors.primary,
               ),
-              child: Text('Next', style: AppTextStyles.body1),
+              child: const Text('Next', style: AppTextStyles.body1),
             ),
           ],
         ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Verification';
+import 'package:flutter_application_2/Verification.dart';
 import 'package:flutter_application_2/theme.dart';
 // Import your theme and styles
 
@@ -20,9 +20,8 @@ class SignUpScreen_b extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Title Text
-            Padding(
-              padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+            const Padding(
+              padding: EdgeInsets.only(top: 20.0, bottom: 40.0),
               child: Text(
                 'Finish Setting Up',
                 style: AppTextStyles.heading2,
@@ -108,7 +107,7 @@ class SignUpScreen_b extends StatelessWidget {
                 ),
                 backgroundColor: AppColors.primary,
               ),
-              child: Text('Next', style: AppTextStyles.body1),
+              child: const Text('Next', style: AppTextStyles.body1),
             ),
           ],
         ),

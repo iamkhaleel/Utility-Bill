@@ -122,11 +122,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       color: AppColors.primary,
                     ),
                   ),
-<<<<<<< HEAD
-                  child: const Text('Try Login Now'),
-=======
-                  child: const Text('Login Now fast'),
->>>>>>> UpdateText
+                  child: const Text('Login'),
                 ),
               ],
             ),

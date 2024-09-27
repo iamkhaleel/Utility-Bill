@@ -20,8 +20,8 @@ class LoginScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // Title Text
-            Padding(
-              padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+            const Padding(
+              padding: EdgeInsets.only(top: 20.0, bottom: 40.0),
               child: Text(
                 'Login',
                 style: AppTextStyles.heading2,
@@ -107,7 +107,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 backgroundColor: AppColors.primary,
               ),
-              child: Text('Next', style: AppTextStyles.body1),
+              child: const Text('Next', style: AppTextStyles.body1),
             ),
           ],
         ),
