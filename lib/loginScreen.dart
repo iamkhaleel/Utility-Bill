@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/DisplaySubscribersPage.dart';
+import 'package:flutter_application_2/HomePage.dart';
 import 'package:flutter_application_2/theme.dart';
-import 'SignUpScreen_b.dart'; // Import your theme and styles
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -28,44 +29,6 @@ class LoginScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-
-            // First Name
-            TextField(
-              decoration: InputDecoration(
-                labelText: 'First Name',
-                labelStyle: AppTextStyles.body2,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(3.5),
-                ),
-              ),
-            ),
-            const SizedBox(height: 20),
-
-            // Last Name
-            TextField(
-              decoration: InputDecoration(
-                labelText: 'Last Name',
-                labelStyle: AppTextStyles.body2,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(3.5),
-                ),
-              ),
-            ),
-            const SizedBox(height: 20),
-
-            // Phone Number
-            TextField(
-              decoration: InputDecoration(
-                labelText: 'Phone Number',
-                labelStyle: AppTextStyles.body2,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(3.5),
-                ),
-              ),
-              keyboardType: TextInputType.phone,
-            ),
-            const SizedBox(height: 20),
-
             // Email
             TextField(
               decoration: InputDecoration(
@@ -79,10 +42,11 @@ class LoginScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // State
+            // password
             TextField(
+              obscureText: true,
               decoration: InputDecoration(
-                labelText: 'State',
+                labelText: 'Password',
                 labelStyle: AppTextStyles.body2,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(3.5),
@@ -96,8 +60,7 @@ class LoginScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                      builder: (context) => const SignUpScreen_b()),
+                  MaterialPageRoute(builder: (context) => HomePage()),
                 );
               },
               style: ElevatedButton.styleFrom(
@@ -107,7 +70,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 backgroundColor: AppColors.primary,
               ),
-              child: const Text('Next', style: AppTextStyles.body1),
+              child: const Text('Login', style: AppTextStyles.body1),
             ),
           ],
         ),
